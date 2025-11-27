@@ -1,0 +1,7 @@
+# ignore virtual environment directories
+gui/gui_env/
+gui_env/
+
+# ignore Python cache files
+__pycache__/
+*.pyc
