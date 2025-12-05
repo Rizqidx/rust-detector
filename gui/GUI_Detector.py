@@ -45,7 +45,9 @@ class GUIDetectorApp:
     FONT_BOLD = ("Segoe UI", 12, "bold")
     FONT_NORMAL = ("Segoe UI", 11)
     FONT_SMALL = ("Segoe UI", 9)
-    MODEL_DIR = "gui/models"  # Nama direktori untuk menyimpan model YOLO
+
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    MODEL_DIR = os.path.join(base_dir, "models")  # Nama direktori untuk menyimpan model YOLO
 
     # --- Metode Inisialisasi (`__init__`) ---
     def __init__(self, root):
